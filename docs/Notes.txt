@@ -1,0 +1,68 @@
+set JAVA_HOME=C:\Program Files\Java\jdk1.8.0_101
+set path=%JAVA_HOME%\bin
+
+javac -d ../bin filename.java
+
+//run from other directory
+java -cp "." filename
+
+encapsulation - bundling data and methods together with operate on each other
+abstraction - focus on essential features of an element, ignoring unneccesary properties. 
+
+stacktrace prints pending method calls
+
+Error- stack overflow, memory out of bound, jvm linkage error
+Exception-----runtime exception - logical bugs, can be always avoided, may not happen if code is modified ( doesn't interact with environment)
+-environment issue( sql exception Io exception) 
+
+int a[][] = new a[5][];
+a[0] = new a[4];
+a[1] = new a[3];
+.
+.
+
+Person p[]= new Person[4];
+Person[0] =new Person();
+.
+.
+
+if method not using any class state make it static
+
+assertEquals - two object are equal( object value equality)(Internally obj1.equals(obj2)
+assertSame - two objects refer to the same object (reference value equality) (Internally obj1==obj2)
+
+
+Object Class
+hashcode() gives base address, however u cannot do anything ( used in hashbased datastructure)
+protected clone() - native( code not present in java)
+
+
+collection is Iterable. Iterable has Iterator
+
+Map<K,V>
+
+Interactive python data structure
+hashcode contract in java
+
+Rules regarding widening and autoboxing ---
+
+* Primitive Widening > Boxing > Varargs.
+* Widening and Boxing (WB) not allowed.
+* Boxing and Widening (BW) allowed.
+* While overloading, Widening + vararg and Boxing + vararg can only be used in a mutually exclusive manner i.e. not together.
+* Widening between wrapper classes not allowed
+
+pluralsight.com
+enthuware.com
+
+Database connectivity
+1> Load JDBC Driver
+2>Get db connection by specifying JDBC url(MAIN protocl. DB specific protocol.info)
+eg- JDBC.=mysql.http://localhost:3306/test
+https://github.com/sanjaydegaonkar/IRP
+process which gets a port no becomes a service
+
+*Web container - which understands both http and programming language like java
+*html pages are rendered and javascript pages are interpreted
+* servlet context provides a boundary for n number of servlets
+* resp.encodeURL() encode session id in url

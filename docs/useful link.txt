@@ -1,0 +1,5 @@
+https://icompassweb.fs.capgemini.com/iCompass/#/login 
+
+http://icompassweb.fs.capgemini.com/iCompass/#/  
+
+http://www.codeproject.com/Articles/493389/Four-ways-of-passing-data-between-layers
