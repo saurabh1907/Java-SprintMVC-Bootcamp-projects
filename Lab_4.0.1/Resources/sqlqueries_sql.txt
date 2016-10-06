@@ -1,0 +1,20 @@
+//For creating table "productdetails"
+
+DROP TABLE IF EXISTS `test`.`productdetails`;
+CREATE TABLE  `test`.`productdetails` (
+  `productID` int(10) unsigned NOT NULL,
+  `name` varchar(45) NOT NULL,
+  `price` varchar(45) NOT NULL,
+  `type` varchar(45) NOT NULL,
+  PRIMARY KEY (`productID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+//For creating table "orders"
+
+DROP TABLE IF EXISTS `test`.`orders`;
+CREATE TABLE  `test`.`orders` (
+  `productID` int(10) unsigned NOT NULL,
+  `clientID` varchar(45) NOT NULL,
+  `quantity` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`productID`,`clientID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;

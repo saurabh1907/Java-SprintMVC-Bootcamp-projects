@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>Lab_4.0</display-name>
+
+<!-- 
+		Following element defines a reference lookup name to an external resource. 
+		This external resource is type of javax.sql.DataSource.  
+		The configuration of this resource is done in META-INF\context.xml  			
+-->
+
+<!-- Don't modify  <resource-ref> element -->
+	
+	<resource-ref>
+		<res-ref-name>jdbc/ShoppingAppDataSource</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+		<res-sharing-scope>Shareable</res-sharing-scope>
+	</resource-ref>
+
+<!-- Following element makes com.seed.MyContextListener as listener for this web app context-->
+
+<!-- Don't modify  <listener> element -->
+<listener>
+	<listener-class>com.seed.MyContextListener </listener-class>
+</listener>
+	
+<!-- Make categories.html as welcome page for this web app context-->
+
+<!-- Make container aware that "com.seed.StoreCartDetailsServlet" is a servlet named as "StoreCartDetailsServlet" -->  
+<!-- Provide URL mapping "/storeDetails" for the servlet "StoreCartDetailsServlet"--> 
+	
+<!-- Make container aware that "com.seed.DisplayCartDetailsServlet" is a servlet named as "DisplayCartDetailsServlet" -->  
+<!-- Don't provide URL mapping for the servlet "DisplayCartDetailsServlet"--> 
+	
+</web-app>

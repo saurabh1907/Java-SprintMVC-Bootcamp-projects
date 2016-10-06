@@ -1,0 +1,7 @@
+#THIS FILE CONTAINS VENDOR SPECIFIC PROPERTIES
+
+jdbc.driver=com.mysql.jdbc.Driver
+jdbc.url=JDBC:mysql://localhost:3306/test
+jdbc.query.addEmployee=insert into employee values(?,?,?,?,?,?,?,?,?)
+jdbc.query.modifyEmployee=insert into messages values(?)
+jdbc.query.displayall=select * from employee

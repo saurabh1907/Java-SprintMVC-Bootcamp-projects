@@ -1,0 +1,12 @@
+package linkedlist;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class iterator {
+public static void main(String[] args) {
+	LinkedList list = new LinkedList();
+	Iterator Iter= list.iterator();
+	it
+}
+}
