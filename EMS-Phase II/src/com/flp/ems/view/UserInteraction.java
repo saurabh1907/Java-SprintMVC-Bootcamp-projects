@@ -87,12 +87,9 @@ public class UserInteraction {
 		employeeService.removeEmployee(employeeID);
 	}
 
-	public void searchEmployee(int employeeID) {
-		//return employeeService.searchEmployee(employeeID);
-	}
 
-	public void searchEmployee(String kinID) {
-		//return employeeService.searchEmployee(kinID);
+	public void searchEmployee(String nameOrId) {
+		HashMap<String, Object> foundEmploye = employeeService.searchEmployee(nameOrId);
 	}
 
 	public void getAllEmployee() {

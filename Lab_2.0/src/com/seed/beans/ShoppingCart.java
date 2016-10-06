@@ -10,6 +10,7 @@ public class ShoppingCart {
 	public ShoppingCart() {
 //		TODO:1 Create object of LinkedList,
 //		which will be referred using member variable "productIds"
+		productIds= new LinkedList<Integer>();
 	}	
 	
 	public java.util.Set<Integer> getProductSet() {

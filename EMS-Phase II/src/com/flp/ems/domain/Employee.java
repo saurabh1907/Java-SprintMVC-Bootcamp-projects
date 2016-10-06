@@ -29,6 +29,9 @@ public Employee(String name,String kinID, long phoneNo, Date dob, Date doj, Stri
 	this.projectID=projectID;
 	this.rolesID=rolesID;	
 }
+public Employee (){
+	
+}
 public int getId() {
 	return id;
 }
