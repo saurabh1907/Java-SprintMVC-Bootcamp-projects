@@ -5,6 +5,9 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\dev\demo\VIM-TODOs"/>
+			<item value="D:\dev\demo\mvc-project\eclipse-workspace\VIM-TODOs"/>
+			<item value="D:\dev\demo\Demo-DS"/>
 			<item value="D:\dev\demo\Demo-DynamicWebApp-2"/>
 			<item value=""/>
 			<item value="D:\dev\demo\Demo-Inheritance"/>

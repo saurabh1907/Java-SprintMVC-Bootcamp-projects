@@ -22,7 +22,7 @@ protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws Se
 	resp.setContentType("text/html");
 	String selection[]= req.getParameterValues(("bookName"));
 	for(String item:selection)
-	writer.println(item +"<br>");
+	writer.println(item + "<br>");
 	
 }
 	//	TODO:3	This method should read products selected by web-client from bookCatelogue.html and 

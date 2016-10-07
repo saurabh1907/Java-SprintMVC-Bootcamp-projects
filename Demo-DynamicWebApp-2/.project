@@ -3,7 +3,6 @@
 	<name>Demo-DynamicWebApp-2</name>
 	<comment></comment>
 	<projects>
-		<project>Demo-Inheritance-2</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

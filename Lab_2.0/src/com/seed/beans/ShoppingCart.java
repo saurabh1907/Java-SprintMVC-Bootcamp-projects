@@ -2,6 +2,7 @@ package com.seed.beans;
 
 import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.Set;
 
 //TODO:0	Modification required
 public class ShoppingCart {
@@ -15,9 +16,15 @@ public class ShoppingCart {
 	
 	public java.util.Set<Integer> getProductSet() {
 //		TODO:2 return set of product ids stored in this shopping cart
+		return (Set<Integer>) productIds;
+		
 	}
 
 	public void setProductList(String[] newProductIds) {
 //		TODO:3	add newProductIds into existing list of product ids
+		for (String id: newProductIds){
+			int productID= Integer.parseInt(id);
+			productIds.add(productID);
+		}
 	}	
 }

@@ -1,7 +1,0 @@
-#THIS FILE CONTAINS VENDOR SPECIFIC PROPERTIES
-
-jdbc.driver=com.mysql.jdbc.Driver
-jdbc.url=JDBC:mysql://localhost:3306/test
-jdbc.query.insert=insert into messages values("Hello")
-jdbc.query.insert2=insert into messages values(?)
-jdbc.query.select=select * from messages
