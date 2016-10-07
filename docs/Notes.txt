@@ -66,3 +66,7 @@ process which gets a port no becomes a service
 *html pages are rendered and javascript pages are interpreted
 * servlet context provides a boundary for n number of servlets
 * resp.encodeURL() encode session id in url
+
+
+MVC - used to provice seperation of concerns.
+model has domain data, business logic, persistence mechanism. 
