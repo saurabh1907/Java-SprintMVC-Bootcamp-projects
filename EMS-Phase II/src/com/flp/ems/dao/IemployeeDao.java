@@ -9,5 +9,5 @@ public interface IemployeeDao {
 	public void modifyEmployee(Employee employee);
 	public void removeEmployee(int empID);
 	public Employee searchEmployee(String nameOrId);
-	public void getAllEmployee();
+	public ArrayList<Employee> getAllEmployee();
 }

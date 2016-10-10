@@ -4,7 +4,6 @@ import java.sql.Date;
 
 public class Employee {
 private int id;
-private static int counter=0;
 private String name;
 private String kinID;
 //private String emailID;
@@ -17,8 +16,6 @@ private int projectID;
 private int rolesID;
 
 public Employee(String name,String kinID, long phoneNo, Date dob, Date doj, String address, int deptID, int projectID, int rolesID){
-	++counter;
-	this.id=counter;
 	this.name=name;
 	this.kinID=kinID;
 	this.phoneNo= phoneNo;

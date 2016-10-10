@@ -13,7 +13,7 @@ public static void main(String[] args) {
 	userInteraction.getAllEmployee();
 	System.out.println();
 	
-	userInteraction.searchEmployee(2);
+	userInteraction.searchEmployee("2");
 	userInteraction.searchEmployee("pawan123");
 	
 	userInteraction.removeEmployee(1);

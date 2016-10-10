@@ -9,6 +9,6 @@ public interface IEmployeeService {
 	public void addEmployee(HashMap<String,Object> employeeData);
 	public void modifyEmployee(HashMap<String,Object> employeeData);
 	public void removeEmployee(int employeeID);
-	public Employee searchEmployee(String nameOrId);
+	public HashMap<String,Object> searchEmployee(String nameOrId);
 	public ArrayList<HashMap<String, Object>> getAllEmployee();
 }

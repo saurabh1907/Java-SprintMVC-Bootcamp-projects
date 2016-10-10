@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.sql.Date;
 import java.util.HashMap;
 
-import com.flp.ems.dao.EmployeeDaoImplForList;
+import com.flp.ems.dao.EmployeeDaoImplForDB;
 import com.flp.ems.domain.Employee;
 import com.flp.ems.util.DateParser;
 import com.flp.ems.util.Validate;
 
 public class EmployeeServiceImpl implements IEmployeeService {
-	private EmployeeDaoImplForList dao= new EmployeeDaoImplForList();
+	private EmployeeDaoImplForDB dao= new EmployeeDaoImplForDB();
 
 	@Override
 	public void addEmployee(HashMap<String, Object> employeeData) {
@@ -61,8 +61,11 @@ public class EmployeeServiceImpl implements IEmployeeService {
 	}
 
 	@Override
-	public Employee searchEmployee(String nameOrId) {
-		return dao.searchEmployee(nameOrId);
+	public HashMap<String,Object> searchEmployee(String nameOrId) {
+		HashMap<String,Object> tempEmpData;
+		Employee currentEmployee: dao.getAllEmploye                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  e();
+		
+		return null;
 
 	}
 
