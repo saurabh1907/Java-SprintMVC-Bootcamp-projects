@@ -9,7 +9,7 @@ import com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
 public class DateParser {
 public static Date dateParser(String dateToParse) throws java.text.ParseException{
 	 DateFormat dateformatter = new SimpleDateFormat("dd/mm/yyyy"); 
-	 Date date= (Date) dateformatter.parse(dateToParse);
+	 Date date= new Date((dateformatter.parse(dateToParse)).getTime());
 	 return date;
 }
 }

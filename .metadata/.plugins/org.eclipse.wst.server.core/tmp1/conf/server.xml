@@ -124,14 +124,22 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="D:\dev\demo\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\ROOT" path="" reloadable="false"/><Context cookies="false" docBase="D:\dev\demo\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\Demo-DynamicWebApp-2" path="/myFirstApp" reloadable="true" source="org.eclipse.jst.jee.server:Demo-DynamicWebApp-2">
+      <Context docBase="D:\dev\demo\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\dev\demo\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\Lab_3.0" path="/Lab_3.0" reloadable="true" source="org.eclipse.jst.jee.server:Lab_3.0">
 
-</Context><Context docBase="D:\dev\demo\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\Lab_1.0" path="/Lab_1.0" reloadable="true" source="org.eclipse.jst.jee.server:Lab_1.0"/><Context cookies="false" docBase="D:\dev\demo\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\Demo-DS" path="/anotherApp" reloadable="true" source="org.eclipse.jst.jee.server:Demo-DS">
+<!-- 
+<Resource name="jdbc/VIMDataSource" auth="Container"
+              type="javax.sql.DataSource" maxActive="100" 
+              maxIdle="30" maxWait="10000"
+              username="VIM" password="seed123" 
+              driverClassName="oracle.jdbc.driver.OracleDriver"
+              url="jdbc:oracle:thin:@localhost:1521:XE"/> 
+               -->
+              
 
-<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="100" maxIdle="30" maxWait="10000" name="jdbc/MyDataSource" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/test"/>
-              
-              
-</Context></Host>
+<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="100" maxIdle="30" maxWait="10000" name="jdbc/ShoppingAppDataSource" password="root" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/ShoppingApp" username="root"/> 
+</Context><Context cookies="false" docBase="D:\dev\demo\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\Demo-DynamicWebApp-2" path="/myFirstApp" reloadable="true" source="org.eclipse.jst.jee.server:Demo-DynamicWebApp-2">
+
+</Context><Context docBase="D:\dev\demo\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\Demo-JSP-2" path="/Demo-JSP-2" reloadable="true" source="org.eclipse.jst.jee.server:Demo-JSP-2"/></Host>
     </Engine>
   </Service>
 </Server>

@@ -70,3 +70,13 @@ process which gets a port no becomes a service
 
 MVC - used to provice seperation of concerns.
 model has domain data, business logic, persistence mechanism. 
+
+jsp 
+index.jsp class
+<%= %> expression (for response)
+<%   %> statement method level
+<%! %> declaration class level
+<%@  %>directive -page,include,taglib outside class level
+web-inf hidden from clients
+wtpwebapps deployment folder inside workspace(actually consumed by tomcat)
+jsp expression language

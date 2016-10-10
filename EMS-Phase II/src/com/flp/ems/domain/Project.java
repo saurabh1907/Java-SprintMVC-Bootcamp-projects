@@ -5,6 +5,10 @@ private int projectID;
 private String name;
 private String description;
 private int departmentID;
+
+public Project(){
+	
+}
 public int getProjectID() {
 	return projectID;
 }

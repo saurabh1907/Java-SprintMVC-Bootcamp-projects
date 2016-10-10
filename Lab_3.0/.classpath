@@ -7,6 +7,5 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/Lab_3.0_Utility.jar"/>
 	<classpathentry kind="lib" path="D:/dev/tools/apache-tomcat-8.0.36/lib/servlet-api.jar"/>
-	<classpathentry kind="lib" path="C:/apache-tomcat-8.0.37/lib/servlet-api.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

@@ -89,14 +89,14 @@ public class UserInteraction {
 
 
 	public void searchEmployee(String nameOrId) {
-		HashMap<String, Object> foundEmploye = employeeService.searchEmployee(nameOrId);
+		HashMap<String, Object> empData = employeeService.searchEmployee(nameOrId);
+		System.out.println(empData.get("name")+ " " + empData.get("kinID")+ " "+ empData.get("phoneNo") + " " + empData.get("dob") );
 	}
 
 	public void getAllEmployee() {
 		System.out.println("\nNAME\tKINID\tPHONENO\t\tDOB\n------------------------------------------------------");
 		for(HashMap<String, Object> empData: employeeService.getAllEmployee()){
-			System.out.println(empData.get("name")+ " " + empData.get("kinID")+ " "+ empData.get("phoneNo") + " " + empData.get("dob") );
-			
+			System.out.println(empData.get("name")+ " " + empData.get("kinID")+ " "+ empData.get("phoneNo") + " " + empData.get("dob") );	
 		}
 	}
 }

@@ -35,7 +35,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
 
 	@Override
 	public void modifyEmployee(HashMap<String, Object> employeeData) {
-		Employee employee = searchEmployee((String) employeeData.get("kinID"));
+		Employee employee = dao.searchEmployee((String) employeeData.get("kinID"));
 		if (employee != null) {
 			try {
 				employee.setName((String) employeeData.get("name"));
@@ -63,17 +63,27 @@ public class EmployeeServiceImpl implements IEmployeeService {
 	@Override
 	public HashMap<String,Object> searchEmployee(String nameOrId) {
 		HashMap<String,Object> tempEmpData;
-		Employee currentEmployee: dao.getAllEmploye                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  e();
+		Employee currentEmployee= dao.searchEmployee(nameOrId);
 		
-		return null;
-
+		tempEmpData= new HashMap<>();
+		tempEmpData.put("name", currentEmployee.getName());
+		tempEmpData.put("kinID", currentEmployee.getKinID());
+		tempEmpData.put("phoneNo", currentEmployee.getPhoneNo());
+		tempEmpData.put("dob", currentEmployee.getDateOfBirth());
+		tempEmpData.put("doj", currentEmployee.getDateOfJoining());
+		tempEmpData.put("address", currentEmployee.getAddress());
+		tempEmpData.put("deptID", currentEmployee.getDepartmentID());
+		tempEmpData.put("projectID", currentEmployee.getPhoneNo());
+		tempEmpData.put("rolesID", currentEmployee.getRolesID());
+		
+		return tempEmpData;
 	}
 
 	@Override
 	public ArrayList<HashMap<String, Object>> getAllEmployee() {
 		ArrayList<HashMap<String, Object>> employeeList = new ArrayList<>();
 		HashMap<String,Object> tempEmpData;
-		for( Employee currentEmployee: dao.getAllEmployee()){
+		for(Employee currentEmployee: dao.getAllEmployee()){
 			tempEmpData= new HashMap<>();
 			tempEmpData.put("name", currentEmployee.getName());
 			tempEmpData.put("kinID", currentEmployee.getKinID());
@@ -88,5 +98,4 @@ public class EmployeeServiceImpl implements IEmployeeService {
 		}
 			return employeeList;
 	}
-
 }

@@ -4,6 +4,10 @@ public class Department {
 	private int departmentID;
 	private String name;
 	private String desciption;
+	
+	public Department(){
+		
+	}
 	public int getDepartmentID() {
 		return departmentID;
 	}

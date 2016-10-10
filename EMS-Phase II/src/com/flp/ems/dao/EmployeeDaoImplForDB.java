@@ -33,8 +33,11 @@ public class EmployeeDaoImplForDB implements IemployeeDao {
 			url = props.getProperty("jdbc.url");
 
 		} catch (FileNotFoundException e) {
+			e.printStackTrace();
 		} catch (IOException e) {
+			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
 		}
 	}
 
@@ -51,8 +54,10 @@ public class EmployeeDaoImplForDB implements IemployeeDao {
 			ps.setInt(7, employee.getDepartmentID());
 			ps.setInt(8, employee.getProjectID());
 			ps.setInt(9, employee.getRolesID());
-			ps.executeQuery();
+			ps.executeUpdate();
+			ps.execute()
 		} catch (SQLException e) {
+			e.printStackTrace();
 		}
 	}
 
@@ -69,8 +74,9 @@ public class EmployeeDaoImplForDB implements IemployeeDao {
 			ps.setInt(7, employee.getDepartmentID());
 			ps.setInt(8, employee.getProjectID());
 			ps.setInt(9, employee.getRolesID());
-			ps.executeQuery();
+			ps.executeUpdate();
 		} catch (SQLException e) {
+			e.printStackTrace();
 		}
 	}
 
@@ -79,8 +85,9 @@ public class EmployeeDaoImplForDB implements IemployeeDao {
 		try (Connection con = DriverManager.getConnection(url);
 				PreparedStatement ps = con.prepareStatement(props.getProperty("jdbc.query.removeEmployee"))) {
 			ps.setInt(1, empID);
-			ps.executeQuery();
+			ps.executeUpdate();
 		} catch (SQLException e) {
+			e.printStackTrace();
 		}
 	}
 
@@ -113,6 +120,7 @@ public class EmployeeDaoImplForDB implements IemployeeDao {
 				employee.setProjectID(rs.getInt(10));
 			}
 		} catch (SQLException e) {
+			e.printStackTrace();
 		}
 		return employee;
 	}
@@ -140,6 +148,7 @@ public class EmployeeDaoImplForDB implements IemployeeDao {
 					employeeList.add(employee);
 				}
 		} catch (SQLException e) {
+			e.printStackTrace();
 		}
 		return employeeList;
 	}

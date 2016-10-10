@@ -124,7 +124,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Demo-DynamicWebApp-2" path="/myFirstApp" reloadable="true" source="org.eclipse.jst.jee.server:Demo-DynamicWebApp-2"/></Host>
+      <Context docBase="Lab_3.0" path="/Lab_3.0" reloadable="true" source="org.eclipse.jst.jee.server:Lab_3.0"/><Context docBase="Demo-DynamicWebApp-2" path="/myFirstApp" reloadable="true" source="org.eclipse.jst.jee.server:Demo-DynamicWebApp-2"/><Context docBase="Demo-JSP-2" path="/Demo-JSP-2" reloadable="true" source="org.eclipse.jst.jee.server:Demo-JSP-2"/></Host>
     </Engine>
   </Service>
 </Server>

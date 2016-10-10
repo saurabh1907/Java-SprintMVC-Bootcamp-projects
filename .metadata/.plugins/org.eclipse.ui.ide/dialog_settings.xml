@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="CleanDialogSettings">
+		<item value="500" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="377" key="DIALOG_HEIGHT"/>
+		<item value="390" key="DIALOG_X_ORIGIN"/>
+		<item value="241" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="ExternalProjectImportWizard">
 		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\dev\demo\Demo-JSP-2"/>
 			<item value="D:\dev\demo\VIM-TODOs"/>
 			<item value="D:\dev\demo\mvc-project\eclipse-workspace\VIM-TODOs"/>
 			<item value="D:\dev\demo\Demo-DS"/>

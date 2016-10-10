@@ -16,7 +16,11 @@ public class ShoppingCart {
 	
 	public java.util.Set<Integer> getProductSet() {
 //		TODO:2 return set of product ids stored in this shopping cart
-		return (Set<Integer>) productIds;
+		Set<Integer> productSet = new HashSet<Integer>();
+		for(int value:productIds){
+			productSet.add(value);
+		}
+		return productSet;
 		
 	}
 

@@ -1,5 +1,5 @@
 use test;
 
-create table Employee(id INT AUTO_INCREMENT, name VARCHAR(20), kinID VARCHAR(50) UNIQUE, phoneNo INT, dateOfBirth DATE, dateOfJoining DATE, address VARCHAR(50),departmentID INT, projectID INT, rolesID INT, primary key(id));
+create table Employee(id INT AUTO_INCREMENT, name VARCHAR(20), kinID VARCHAR(50), phoneNo BIGINT, dateOfBirth DATE, dateOfJoining DATE, address VARCHAR(50),departmentID INT, projectID INT, rolesID INT, primary key(id));
 
 insert into employees values("saurabh","saurabh123",9876543210, 
