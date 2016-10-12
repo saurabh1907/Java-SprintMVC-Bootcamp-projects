@@ -68,6 +68,11 @@ process which gets a port no becomes a service
 * resp.encodeURL() encode session id in url
 
 
+tomcat start without eclipse
+go to bin open cmd here
+set JAVA_HOME
+startup.bat
+
 MVC - used to provice seperation of concerns.
 model has domain data, business logic, persistence mechanism. 
 
