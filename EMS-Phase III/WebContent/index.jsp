@@ -6,14 +6,13 @@
   <body>
   
     <h1>Welcome to Employee Management System Portal</h1>
-    <h2>Add Employee</h2> <jsp:forward page = "abc.jsp" />
-	<h2>Modify Employee</h2>
-	<h2>Remove Employee</h2>
-	<h2>Search Employee</h2>
-	<h2>Show All Employee</h2>
-    <p>
-</p>
+    <h2>
+    <a href=addEmployee.jsp>Add Employee  </a><br>
+	<a href=modifyEmployee.jsp>Modify Employee </a><br>
+	<a href=removeEmployee.jsp>Remove Employee </a><br>
+	<a href=searchEmployee.jsp>Search Employee </a><br>
+	<a href=showAll.jsp>Show All Employee </a><br>
+	</h2>
 	
-    <a href="controller?<%-- Set the value for 'action' parameter to 'viewCarList' --%>">View Inventory</a> 
   </body>
 </html>

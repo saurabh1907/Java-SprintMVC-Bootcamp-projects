@@ -10,7 +10,17 @@
 
 <%-- TODO:1 Use standard action (jsp:usebean) to obtain scoped variable "wishList" from session scope--%>
 
+<jsp:useBean id="wishList" class="com.seed.beans.ShoppingCart" scope="session">
+<jsp:setProperty name="wishList" property="productList" param="bookID"/>
+</jsp:useBean>
 
+<% if(request.getParameterValues("addToList")!=null){ %>
+<jsp:forward page="categories.html"></jsp:forward>
+<% }
+else if(request.getParameterValues("checkout")!=null){
+%>
+<jsp:forward page="displayWishListDetails.jsp"/>>
+<%} %>
 <%-- TODO:2 set "productList" property of "wishList"with request parameter "bookID"--%>
 
 <%-- TODO:3 forward current request to "categories.html" if user clicks on "Add to Wish List & shop more?" button--%>

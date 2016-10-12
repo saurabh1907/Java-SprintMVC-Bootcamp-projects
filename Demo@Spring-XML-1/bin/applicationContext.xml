@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd"
+		
+	>
+
+	<bean name="customerRepositoryy"
+		class="com.pluralsight.repository.HibernateCustomerRepositoryImpl"/>
+
+<!-- 	<bean name="customerRepositoryy2"
+		class="com.pluralsight.repository.HibernateCustomerRepositoryImpl"/>
+ -->
+ 	<bean name="customerService" 
+ 				class="com.pluralsight.service.CustomerServiceImpl" 
+ 					scope="prototype"
+ 						autowire="constructor"
+ 					
+ 					>
+ 			<!-- <constructor-arg index="0" ref="customerRepositoryy"/> -->		
+ 					
+ 			<!-- <property name="customerRepository" ref="customerRepositoryy"/> -->		
+ 					
+ 					 
+ 	</bean>
+
+
+
+
+
+
+
+<!--  setCustomerRepository(CustomerRepository ref)-->
+
+
+	
+</beans>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+<!-- 
+	<bean name="customerService" class="com.pluralsight.service.CustomerServiceImpl" 
+		autowire="default"> </bean>
+
+
+	<bean name="customerService" class="com.pluralsight.service.CustomerServiceImpl" 
+		> 
+		<property name="customerRepository" ref="customerRepository" /> 
+		
+		</bean>
+ -->
+ 
+ <!-- 	<bean name="customerService" class="com.pluralsight.service.CustomerServiceImpl" 
+		> <constructor-arg index="0" ref="customerRepository" /> </bean>
+ -->
+
+
+<!-- 	<bean name="customerRepository"
+		class="com.pluralsight.repository.HibernateCustomerRepositoryImpl" />
+ -->
+
+
+
+	<!-- <bean name="customerRepository2" class="com.pluralsight.repository.HibernateCustomerRepositoryImpl" 
+		/> -->
+
+
+
+	<!-- <bean name="customerService" class="com.pluralsight.service.CustomerServiceImpl" 
+		autowire="constructor"> </bean> -->
+
+	<!-- <bean name="customerService" class="com.pluralsight.service.CustomerServiceImpl" 
+		> <constructor-arg index="0" ref="customerRepository" /> </bean> -->
+
+
+
+
+<!-- <bean name="customerService" class="com.pluralsight.service.CustomerServiceImpl" 
+	autowire="byType"> </bean> -->
+
+<!-- <bean name="customerService" class="com.pluralsight.service.CustomerServiceImpl" 
+	> <property name="customerRepository" ref="customerRepository" /> </bean> -->
+
+
+<!-- <bean name="customerService" class="com.pluralsight.service.CustomerServiceImpl" 
+	> <constructor-arg index="0" ref="customerRepository" /> </bean> -->
+
+

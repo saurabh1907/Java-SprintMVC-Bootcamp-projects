@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <title>Employee Management System</title>
+  </head>
+  <body>
+  
+    <h1>Welcome to Employee Management System Portal</h1>
+    <h2>
+    <a href=addEmployee.jsp>Add Employee  </a>
+	<a href=modifyEmployee.jsp>Modify Employee </a>
+	<a href=removeEmployee.jsp>Remove Employee </a>
+	<a href=searchEmployee.jsp>Search Employee </a>
+	<a href=showAll.jsp>Show All Employee </a>
+	</h2>
+	
+  </body>
+</html>
