@@ -8,6 +8,7 @@
 </head>
 <body>
 <form action="ControllerServlet" method="post">
+<input type="hidden" name= "formType" value = "showAll">
 <input type="submit" name="showAll" value="show all" /><br><br>
 <a href="index.jsp">Home</a>
 </form>

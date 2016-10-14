@@ -1,0 +1,37 @@
+package com.flp.ems.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+@WebServlet("/ControllerServlet")
+public class ControllerServlet extends HttpServlet {
+	private static final String ACTION_KEY = "formType";
+	private static final String ADD_EMPLOYEE_ACTION = "addEmployee";
+	private static final String MODIFY_EMPLOYEE_ACTION = "modifyEmployee";
+	private static final String REMOVE_EMPLOYEE_ACTION = "removeEmployee";
+	private static final String SEARCH_EMPLOYEE_ACTION = "searchEmployee";
+	private static final String SHOW_ALL_ACTION = "showAll";
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    	//doPost(request, response);
+    
+    	
+	}
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//doGet(request, response);
+    	String action = request.getParameter("formType");
+    	switch(action){
+    	case 
+    	}
+		
+	}
+
+}

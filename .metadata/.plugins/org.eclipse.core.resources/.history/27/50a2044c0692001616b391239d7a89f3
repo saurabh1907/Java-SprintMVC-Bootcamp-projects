@@ -1,0 +1,15 @@
+package com.cg;
+
+import javax.sql.DataSource;
+
+public class JDBCCarDAO {
+
+	
+	private DataSource dataSource;
+	{
+		System.out.println("hello i am here");
+	}
+}
+	
+	
+	

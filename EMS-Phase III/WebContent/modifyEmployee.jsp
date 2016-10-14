@@ -8,6 +8,8 @@
 </head>
 <body>
 <form action="ControllerServlet" method="post">
+<input type="hidden" name= "formType" value = "modifyEmployee">
+Name <input type="text" name="name"/><br>
 Kin ID <input type="text" name="kinID"/><br>
 Phone No <input type="text" name="phoneNo" /><br>
 Date of Birth <input type="text" name="dateOfBirth" /><br>

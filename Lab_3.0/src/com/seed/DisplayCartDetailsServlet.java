@@ -44,8 +44,7 @@ public class DisplayCartDetailsServlet extends HttpServlet {
 		ShoppingCart cartRef = null;
 
 //		Don't create a new session, if it is already expired
-		HttpSession session = request.getSession(false);
-		
+		HttpSession session = request.getSession();
 		if (session == null) {
 			out.println("<h1>Session expired!</h1>");
 			out.println("<h2><a href='categories.html'>See Categories, again</a></h2>");			

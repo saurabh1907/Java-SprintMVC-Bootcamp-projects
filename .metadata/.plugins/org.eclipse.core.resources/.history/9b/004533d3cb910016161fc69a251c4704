@@ -1,0 +1,23 @@
+package com.cg.beans;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+@RequestMapping("/getMsg")
+public class MyController {
+
+	@RequestMapping(method=RequestMethod.GET)
+//	@ResponseBody
+	public String getMessage(ModelMap map){
+		
+		map.addAttribute("message","Hello, World!");
+		return "displayMessage";
+	}
+	
+	
+	
+}

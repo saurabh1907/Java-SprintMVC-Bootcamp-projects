@@ -3,7 +3,7 @@
 	<item value="false" key="TypeHierarchyViewPart.qualifiednames"/>
 	<item value="3" key="TypeHierarchyViewPart.orientation"/>
 	<item value="false" key="TypeHierarchyViewPart.linkeditors"/>
-	<item value="D:\dev\demo\VIM-TODOs\WebContent\WEB-INF\lib" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="D:\dev\demo\Dependencies\lib" key="org.eclipse.jdt.ui.lastextjar"/>
 	<item value="0" key="TypeHierarchyViewPart.hierarchyview"/>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="false" key="updateQualifiedNames"/>

@@ -1,0 +1,32 @@
+package com.cg;
+
+import java.sql.Connection;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.BeansException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+
+public class JDBCDAO implements ApplicationContextAware{
+
+	
+	private DataSource dataSource;
+	private Connection con;
+	private ApplicationContext appcontext;
+	
+	{
+		Connection con=(Connection) appcontext.getBean("VIMDataSource");
+		con.getConnection();
+	}
+
+	@Override
+	public void setApplicationContext(ApplicationContext arg0) throws BeansException {
+		// TODO Auto-generated method stub
+		appcontext= arg0;
+		
+	}
+}
+	
+	
+	

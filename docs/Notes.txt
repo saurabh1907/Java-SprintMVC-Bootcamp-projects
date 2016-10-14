@@ -55,6 +55,7 @@ Rules regarding widening and autoboxing ---
 pluralsight.com
 enthuware.com
 
+we are using mysql5.6.24 64bit 358mb
 Database connectivity
 1> Load JDBC Driver
 2>Get db connection by specifying JDBC url(MAIN protocl. DB specific protocol.info)

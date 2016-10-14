@@ -1,0 +1,134 @@
+package com.flp.ems.controller;
+
+import java.io.IOException;
+import java.sql.Date;
+import java.util.HashMap;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.flp.ems.service.EmployeeServiceImpl;
+import com.flp.ems.util.DateParser;
+import com.flp.ems.util.Validate;
+
+@WebServlet("/ControllerServlet")
+public class ControllerServlet extends HttpServlet {
+	private static final String ACTION_KEY = "formType";
+	private static final String ADD_EMPLOYEE_ACTION = "addEmployee";
+	private static final String MODIFY_EMPLOYEE_ACTION = "modifyEmployee";
+	private static final String REMOVE_EMPLOYEE_ACTION = "removeEmployee";
+	private static final String SEARCH_EMPLOYEE_ACTION = "searchEmployee";
+	private static final String SHOW_ALL_ACTION = "showAll";
+	private EmployeeServiceImpl employeeService = new EmployeeServiceImpl() ;
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    	//doPost(request, response);
+    
+    	
+	}
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//doGet(request, response);
+    	String action = request.getParameter(ACTION_KEY);
+    	switch(action){
+    	case ADD_EMPLOYEE_ACTION:
+    		HashMap<String, Object> employeeData = new HashMap<>();
+    		
+    		String name = request.getParameter("name");
+			String kinID = request.getParameter("kinID");
+			long phoneNo = request.getParameter("phoneNo");
+			Date dob = request.getParameter("dob"));
+			Date doj = request.getParameter("doj");
+
+			String address = (String) employeeData.get("address");
+			int deptID = (int) employeeData.get("deptID");
+			int projectID = (int) employeeData.get("projectID");
+			int rolesID = (int) employeeData.get("rolesID");
+    		
+    		if (Validate.validateName(n))
+    			employeeData.put("name", name);
+    		else
+    			System.out.println("Invalid Name Format");
+
+    		if (Validate.validateKinID(kinID))
+    			employeeData.put("kinID", kinID);
+    		else
+    			System.out.println("KinID not unique");
+
+    		if (Validate.validatePhoneNo(phoneNo))
+    			employeeData.put("phoneNo", phoneNo);
+    		else
+    			System.out.println("Phone No invalid");
+
+    		if (Validate.validateDate(dob))
+    			employeeData.put("dob", dob);
+    		else
+    			System.out.println("Enter date in dd/mm/yyyy");
+
+    		if (Validate.validateDate(doj))
+    			employeeData.put("doj", doj);
+    		else
+    			System.out.println("Enter date in dd/mm/yyyy");
+
+    		employeeData.put("address", address);
+    		employeeData.put("deptID", deptID);
+    		employeeData.put("projectID", projectID);
+    		employeeData.put("rolesID", rolesID);
+
+    		employeeService.addEmployee(employeeData);
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		break;
+    	case MODIFY_EMPLOYEE_ACTION:
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		
+    		break;
+    	case REMOVE_EMPLOYEE_ACTION:
+    		
+    		
+    		
+    		
+    		
+    		
+    		break;
+    	case SEARCH_EMPLOYEE_ACTION:
+    		
+    		
+    		
+    		
+    		
+    		
+    		break;
+    	case SHOW_ALL_ACTION:
+    		
+    		
+    		
+    		
+    		
+    		break;
+    	default:
+    		System.out.println("invalid page");
+    	}
+		
+	}
+
+}

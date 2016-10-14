@@ -8,7 +8,8 @@
 </head>
 <body>
 <form action="ControllerServlet" method="post">
-Enter employee ID<input type="text" name="empID" />
+<input type="hidden" name= "formType" value = "removeEmployee">
+Enter employee ID<input type="text" name="employeeID" />
 <input type="submit" name="removeEmployee" value="Submit" /><br><br>
 <a href="index.jsp">Home</a>
 </form>

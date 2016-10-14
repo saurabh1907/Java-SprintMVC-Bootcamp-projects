@@ -8,7 +8,8 @@
 </head>
 <body>
 <form action="ControllerServlet" method="post">
-Enter employee ID<input type="text" name="empID" />
+<input type="hidden" name= "formType" value = "searchEmployee">
+Enter employee ID or KinID<input type="text" name="nameOrID" />
 <input type="submit" name="addEmployee" value="Submit" /><br><br>
 <a href="index.jsp">Home</a>
 </form>
