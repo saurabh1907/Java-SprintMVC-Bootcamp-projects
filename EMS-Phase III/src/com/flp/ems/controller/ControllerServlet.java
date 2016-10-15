@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.sql.Date;
 import java.util.HashMap;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -38,7 +39,7 @@ public class ControllerServlet extends HttpServlet {
 		String action = request.getParameter(ACTION_KEY);
 
 		if (action.equals(ADD_EMPLOYEE_ACTION)) {
-			HashMap<String, Object> employeeData = new HashMap<>();
+			HashMap<String, String> employeeData = new HashMap<>();
 
 			String name = request.getParameter("name");
 			String kinID = request.getParameter("kinID");
@@ -61,10 +62,11 @@ public class ControllerServlet extends HttpServlet {
 			employeeData.put("rolesID", rolesID);
 
 			employeeService.addEmployee(employeeData);
+			response.sendRedirect("index.jsp");
 		}
 
 		if (action.equals(MODIFY_EMPLOYEE_ACTION)) {
-			HashMap<String, Object> employeeData = new HashMap<>();
+			HashMap<String, String> employeeData = new HashMap<>();
 
 			String name = request.getParameter("name");
 			String kinID = request.getParameter("kinID");
@@ -87,13 +89,18 @@ public class ControllerServlet extends HttpServlet {
 			employeeData.put("rolesID", rolesID);
 
 			employeeService.modifyEmployee(employeeData);
+			response.sendRedirect("index.jsp");
 
 		}
 		if (action.equals(REMOVE_EMPLOYEE_ACTION)) {
 			employeeService.removeEmployee(request.getParameter("employeeID"));
+			response.sendRedirect("index.jsp");
 		}
 		if (action.equals(SEARCH_EMPLOYEE_ACTION)) {
 			HashMap<String, Object> empData = employeeService.searchEmployee(request.getParameter("nameOrID"));
+			request.setAttribute("empData", empData);
+			RequestDispatcher rd = request.getRequestDispatcher("displayEmployee.jsp");
+			rd.forward(request, response);
 			System.out.println(empData.get("name") + " " + empData.get("kinID") + " " + empData.get("phoneNo") + " "
 					+ empData.get("dob"));
 
@@ -104,6 +111,7 @@ public class ControllerServlet extends HttpServlet {
 				System.out.println(empData.get("name") + " " + empData.get("kinID") + " " + empData.get("phoneNo") + " "
 						+ empData.get("dob"));
 			}
+			response.sendRedirect("index.jsp");
 		}
 
 	}

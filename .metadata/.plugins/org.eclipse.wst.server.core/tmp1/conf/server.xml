@@ -129,7 +129,7 @@
 <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="100" maxIdle="30" maxWait="10000" name="jdbc/MyDataSource" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/test"/>
               
               
-</Context></Host>
+</Context><Context docBase="D:\dev\demo\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\EMS-Phase III" path="/EMS-Phase_III" reloadable="true" source="org.eclipse.jst.jee.server:EMS-Phase III"/></Host>
     </Engine>
   </Service>
 </Server>

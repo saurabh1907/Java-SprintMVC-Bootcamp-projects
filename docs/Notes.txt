@@ -86,3 +86,5 @@ index.jsp class
 web-inf hidden from clients
 wtpwebapps deployment folder inside workspace(actually consumed by tomcat)
 jsp expression language
+
+context loader listener creates IOC container replresented by web application context

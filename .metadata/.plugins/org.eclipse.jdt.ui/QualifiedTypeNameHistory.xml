@@ -14,7 +14,6 @@
 <fullyQualifiedTypeName name="com.cg.util.DBUtility"/>
 <fullyQualifiedTypeName name="com.cg.dto.CarDTO"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
@@ -24,7 +23,6 @@
 <fullyQualifiedTypeName name="com.cg.dao.impl.JDBCCarDAO"/>
 <fullyQualifiedTypeName name="javax.activation.DataSource"/>
 <fullyQualifiedTypeName name="com.cg.util.ServiceLocator"/>
-<fullyQualifiedTypeName name="javax.sql.DataSource"/>
 <fullyQualifiedTypeName name="com.cg.util.ServiceLocatorException"/>
 <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
@@ -40,5 +38,9 @@
 <fullyQualifiedTypeName name="org.springframework.web.context.support.WebApplicationContextUtils"/>
 <fullyQualifiedTypeName name="com.cg.JDBCDAO"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.core.env.SystemEnvironmentPropertySource"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContextAware"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
 </qualifiedTypeNameHistroy>

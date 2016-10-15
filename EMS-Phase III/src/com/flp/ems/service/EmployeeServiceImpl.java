@@ -13,18 +13,18 @@ public class EmployeeServiceImpl implements IEmployeeService {
 	private EmployeeDaoImplForDB dao= new EmployeeDaoImplForDB();
 
 	@Override
-	public void addEmployee(HashMap<String, Object> employeeData) {
+	public void addEmployee(HashMap<String, String> employeeData) {
 		try {
-			String name = (String) employeeData.get("name");
-			String kinID = (String) employeeData.get("kinID");
-			long phoneNo = (long) employeeData.get("phoneNo");
-			Date dob = DateParser.dateParser((String) employeeData.get("dob"));
-			Date doj = DateParser.dateParser((String) employeeData.get("doj"));
+			String name = employeeData.get("name");
+			String kinID = employeeData.get("kinID");
+			long phoneNo = Long.parseLong(employeeData.get("phoneNo"));
+			Date dob = DateParser.dateParser(employeeData.get("dob"));
+			Date doj = DateParser.dateParser(employeeData.get("doj"));
 
-			String address = (String) employeeData.get("address");
-			int deptID = (int) employeeData.get("deptID");
-			int projectID = (int) employeeData.get("projectID");
-			int rolesID = (int) employeeData.get("rolesID");
+			String address = employeeData.get("address");
+			int deptID = Integer.parseInt(employeeData.get("deptID"));
+			int projectID = Integer.parseInt(employeeData.get("projectID"));
+			int rolesID = Integer.parseInt(employeeData.get("rolesID"));
 
 			Employee employee = new Employee(name, kinID, phoneNo, dob, doj, address, deptID, projectID, rolesID);
 			dao.addEmployee(employee);
@@ -34,19 +34,19 @@ public class EmployeeServiceImpl implements IEmployeeService {
 	}
 
 	@Override
-	public void modifyEmployee(HashMap<String, Object> employeeData) {
+	public void modifyEmployee(HashMap<String, String> employeeData) {
 		Employee employee = dao.searchEmployee((String) employeeData.get("kinID"));
 		if (employee != null) {
 			try {
-				employee.setName((String) employeeData.get("name"));
-				employee.setKinID((String) employeeData.get("kinID"));
-				employee.setPhoneNo((long) employeeData.get("phoneNo"));
-				employee.setDateOfBirth(DateParser.dateParser((String) employeeData.get("dob")));
-				employee.setDateOfJoining(DateParser.dateParser((String) employeeData.get("doj")));
-				employee.setAddress((String) employeeData.get("address"));
-				employee.setDepartmentID((int) employeeData.get("deptID"));
-				employee.setProjectID((int) employeeData.get("projectID"));
-				employee.setRolesID((int) employeeData.get("rolesID"));
+				employee.setName(employeeData.get("name"));
+				employee.setKinID(employeeData.get("kinID"));
+				employee.setPhoneNo(Long.parseLong(employeeData.get("phoneNo")));
+				employee.setDateOfBirth(DateParser.dateParser(employeeData.get("dob")));
+				employee.setDateOfJoining(DateParser.dateParser(employeeData.get("doj")));
+				employee.setAddress(employeeData.get("address"));
+				employee.setDepartmentID(Integer.parseInt(employeeData.get("deptID")));
+				employee.setProjectID(Integer.parseInt(employeeData.get("projectID")));
+				employee.setRolesID(Integer.parseInt(employeeData.get("rolesID")));
 
 				dao.modifyEmployee(employee);
 			} catch (java.text.ParseException e) {
@@ -56,8 +56,8 @@ public class EmployeeServiceImpl implements IEmployeeService {
 	}
 
 	@Override
-	public void removeEmployee(int employeeID) {
-		dao.removeEmployee(employeeID);
+	public void removeEmployee(String employeeID) {
+		dao.removeEmployee(Integer.parseInt(employeeID));
 	}
 
 	@Override
