@@ -10,5 +10,4 @@ public interface IemployeeDao {
 	public void removeEmployee(int empID);
 	public Employee searchEmployee(String nameOrId);
 	public ArrayList<Employee> getAllEmployee();
-	;
 }

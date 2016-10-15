@@ -147,7 +147,7 @@ public class EmployeeDaoImplForDB implements IemployeeDao {
 					employee.setProjectID(rs.getInt(10));
 					employeeList.add(employee);
 				}
-		} catch (SQLException e) {//hello
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return employeeList;

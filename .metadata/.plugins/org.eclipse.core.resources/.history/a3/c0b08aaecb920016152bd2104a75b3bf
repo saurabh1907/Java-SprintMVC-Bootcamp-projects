@@ -7,7 +7,7 @@ public int getRoleID() {
 	return roleID;
 }
 public void setRoleID(int roleID) {
-	this.roleID = roleID;//hello
+	this.roleID = roleID;
 }
 public String getName() {
 	return name;

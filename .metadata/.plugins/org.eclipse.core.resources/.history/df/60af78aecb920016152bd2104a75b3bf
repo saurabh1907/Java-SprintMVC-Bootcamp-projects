@@ -17,7 +17,7 @@ public class Validate {
 	}
 
 	public static boolean validateDate(String date) {
-		return true;//hello
+		return true;
 	}
 
 }

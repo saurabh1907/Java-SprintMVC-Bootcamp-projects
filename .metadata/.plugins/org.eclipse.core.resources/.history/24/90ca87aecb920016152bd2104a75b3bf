@@ -75,7 +75,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
 		tempEmpData.put("deptID", currentEmployee.getDepartmentID());
 		tempEmpData.put("projectID", currentEmployee.getPhoneNo());
 		tempEmpData.put("rolesID", currentEmployee.getRolesID());
-		//hello
+		
 		return tempEmpData;
 	}
 

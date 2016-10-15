@@ -11,5 +11,4 @@ public interface IEmployeeService {
 	public void removeEmployee(String employeeID);
 	public HashMap<String,Object> searchEmployee(String nameOrId);
 	public ArrayList<HashMap<String, Object>> getAllEmployee();
-	;
 }

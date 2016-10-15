@@ -112,7 +112,6 @@ public class ControllerServlet extends HttpServlet {
 						+ empData.get("dob"));
 			}
 			response.sendRedirect("index.jsp");
-			//hello
 		}
 
 	}

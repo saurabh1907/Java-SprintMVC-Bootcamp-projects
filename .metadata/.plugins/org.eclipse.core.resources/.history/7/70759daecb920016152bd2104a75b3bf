@@ -25,7 +25,6 @@ public class Department {
 	}
 	public void setDesciption(String desciption) {
 		this.desciption = desciption;
-		//hello
 	}
 	
 }

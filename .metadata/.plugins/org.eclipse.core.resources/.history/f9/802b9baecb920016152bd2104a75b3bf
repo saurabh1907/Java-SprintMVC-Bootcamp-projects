@@ -52,7 +52,7 @@ public void setKinID(String kinID) {
 //}
 //public void setEmailID(String emailID) {
 //	this.emailID = emailID;
-//}//hello
+//}
 public long getPhoneNo() {
 	return phoneNo;
 }
