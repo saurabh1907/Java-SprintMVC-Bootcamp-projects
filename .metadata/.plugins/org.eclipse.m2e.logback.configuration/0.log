@@ -58,3 +58,4 @@ Caused by: org.apache.http.client.HttpResponseException: Proxy Authorization Req
 2016-10-14 08:41:10,694 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
 2016-10-14 17:08:48,222 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
 2016-10-14 17:22:53,785 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2016-10-15 08:46:05,614 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
