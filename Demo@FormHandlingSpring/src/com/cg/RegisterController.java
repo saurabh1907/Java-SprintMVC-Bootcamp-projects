@@ -3,8 +3,10 @@ package com.cg;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
- 
- 
+
+import org.springframework.beans.BeansException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,9 +14,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
  
 @Controller
 @RequestMapping(value = "/register")
-public class RegisterController {
+public class RegisterController implements ApplicationContextAware{
 
 	private UserDTO dtoRef;
+	private ApplicationContext acontext;
 	
 	{
     	dtoRef = new UserDTO();
@@ -25,8 +28,8 @@ public class RegisterController {
     @RequestMapping(method = RequestMethod.GET)
     public String viewRegistration(Map<String, Object> model) {
     	System.out.println("inside GET ***");
-    	JDBCDAO dao= new JDBCDAO();
-    	dao.establish();
+    	JDBCDAO dao= (JDBCDAO) acontext.getBean("dao");
+    	dao.add();
 /*        UserDTO userForm = new UserDTO();    
         
         userForm.setUsername("dummy");
@@ -69,5 +72,11 @@ public class RegisterController {
     	System.out.println("TRYING TO CREATE AN ENTRY FOR A USER");
     	return dtoRef;
     }
+
+	@Override
+	public void setApplicationContext(ApplicationContext arg0) throws BeansException {
+		// TODO Auto-generated method stub
+		acontext=arg0;
+	}
     
 }

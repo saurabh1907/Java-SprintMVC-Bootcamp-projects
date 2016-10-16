@@ -13,7 +13,9 @@
 
 	<jee:jndi-lookup id="VIMDataSource" jndi-name="java:/comp/env/jdbc/MyDataSource"
 		expected-type="javax.sql.DataSource" />
-	<bean class=com.cg.JDBCDAO >
-	<property=
+	
+	<bean id="dao" class="com.cg.JDBCDAO">
+	<property name="dataSource" ref="VIMDataSource" />
+	</bean>
 		
 </beans>		
