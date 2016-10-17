@@ -1,0 +1,19 @@
+
+
+
+<Context>
+
+	<!--  THIS RESOURCE WILL BE 1. CREATED BY CONTAINER AND 2. BINDED INTO JNDI TREE 
+			WITH NAME "jdbc/myDS"
+	-->
+	<Resource type="javax.sql.DataSource"
+			auth="Container"
+			name="jdbc/myDS"
+			maxIdle ="30" maxWaitMillis="10000" maxTotal ="100" 
+			driverClassName ="com.mysql.jdbc.Driver"
+			url="jdbc:mysql://localhost:3306/test"
+	
+	/>
+
+
+</Context>

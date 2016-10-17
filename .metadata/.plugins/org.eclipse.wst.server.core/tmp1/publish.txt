@@ -1,3 +1,2 @@
 #Tomcat publish data
-#Sat Oct 15 17:07:01 IST 2016
-org.eclipse.jst.jee.server\:/binary\:D\:\\dev\\demo\\Dependencies\\lib\\spring-web-3.2.9.RELEASE.jar=WEB-INF/lib/spring-web-3.2.9.RELEASE.jar
+#Mon Oct 17 08:40:25 IST 2016

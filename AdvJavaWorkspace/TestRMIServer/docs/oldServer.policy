@@ -1,0 +1,8 @@
+grant codeBase "file:///c:/webWorkspace/TestRMIServer/bin/"  {
+  permission java.net.SocketPermission 
+     "*:1024-65535", "connect,accept,resolve";
+     
+	permission java.io.FilePermission 
+	"<<ALL FILES>>", "read, write, delete, execute";     
+ 
+};

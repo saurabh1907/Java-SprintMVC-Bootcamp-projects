@@ -1,0 +1,12 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.epp.usagedata.recording,1.0.1.R200809220400,org.eclipse.epp.usagedata.recording,1338639240500
+started,bundle,org.eclipse.epp.usagedata.ui,1.0.1.R200809220400,org.eclipse.epp.usagedata.ui,1338639241656
+started,bundle,org.eclipse.jdt.apt.core,3.3.101.R34x_v20090114-1205,org.eclipse.jdt.apt.core,1338639241750
+started,bundle,org.eclipse.jdt.apt.pluggable.core,1.0.101.R34x_v20081108-1950,org.eclipse.jdt.apt.pluggable.core,1338639241828
+deactivated,workbench,org.eclipse.ui.workbench,3.4.2.M20090127-1700,,1338639242875
+started,bundle,org.eclipse.wst.dtd.core,1.1.200.v200805140200,org.eclipse.wst.dtd.core,1338639243343
+started,bundle,org.eclipse.wst.sse.ui,1.1.4.v200901202345,org.eclipse.wst.sse.ui,1338639243921
+started,bundle,org.eclipse.wst.html.ui,1.0.302.v200810291731,org.eclipse.wst.html.ui,1338639243921
+started,bundle,org.eclipse.jst.jsp.core,1.2.121.v200901290830,org.eclipse.jst.jsp.core,1338639244281
+started,bundle,org.eclipse.wst.wsdl.validation,1.1.302.v200807240215,org.eclipse.wst.wsdl.validation,1338639244796
+started,bundle,org.eclipse.wst.xsd.core,1.1.302.v200810020300,org.eclipse.wst.xsd.core,1338639244921

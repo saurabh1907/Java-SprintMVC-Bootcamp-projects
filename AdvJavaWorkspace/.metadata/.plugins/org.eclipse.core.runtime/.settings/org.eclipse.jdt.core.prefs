@@ -1,0 +1,16 @@
+#Tue Feb 21 16:18:15 IST 2012
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
+org.eclipse.jdt.core.compiler.compliance=1.6
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=C\:/Program Files/Java/jre6/lib/rt.jar
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.6
+org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=C\:/eclipse-jee-ganymede-SR2-win32/eclipse
+org.eclipse.jdt.core.builder.resourceCopyExclusionFilter=*.launch
+org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=C\:/eclipse-jee-ganymede-SR2-win32/eclipse/plugins/org.junit_3.8.2.v20080602-1318
+eclipse.preferences.version=1
+org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+org.eclipse.jdt.core.userLibrary.RMISpecifications=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<userlibrary systemlibrary\="false" version\="1">\r\n\t<archive path\="D\:/Geometric/AdvJavaWorkspace/computeSpecs.jar"/>\r\n</userlibrary>\r\n
+org.eclipse.jdt.core.compiler.source=1.6
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=
+org.eclipse.jdt.core.compiler.problem.assertIdentifier=error

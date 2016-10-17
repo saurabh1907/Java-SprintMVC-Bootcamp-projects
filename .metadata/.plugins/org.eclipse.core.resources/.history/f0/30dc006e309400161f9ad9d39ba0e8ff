@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Add Employee</title>
+</head>
+<body>
+<form action="ControllerServlet" method="post" >
+<input type="hidden" name= "formType" value = "addEmployee">
+Name <input type="text" name="name" required pattern="[A-Za-z0-9]+\s[A-Za-z0-9]+\s[A-Za-z0-9]+" autofocus/><br>
+Kin ID <input type="text" name="kinID" required pattern="[A-Za-z0-9]+"/><br>
+Phone No <input type="tel" name="phoneNo" required maxlength="10" placeholder="Enter a valid phone number"/><br>
+Date of Birth <input type="text" name="dob" required value="11/11/1111"/><br>
+Date of Joining <input type="date" name="doj" required /><br>
+Address <input type="text" name="address" required value="Address"/><br>
+Department ID <input type="number" size="2" min="1" max="99" name="deptID" required value="10"/><br>
+Project ID <input type="number" size="2" min="1" max="99" name="projectID" required value="20"/><br>
+Roles ID <input type="number" size="2" min="1" max="99" name="rolesID" required value="20"/><br>
+<input type="submit" name="addEmployee" value="Submit" /><br><br>
+<a href="index.jsp">Home</a>
+</form>
+</body>
+</html>

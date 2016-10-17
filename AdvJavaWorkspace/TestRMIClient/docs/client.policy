@@ -1,0 +1,4 @@
+grant codeBase "file:///c:/webWorkspace/TestRMIClient/bin/"{
+  permission java.net.SocketPermission 
+     "*:1024-65535", "connect,accept,resolve";
+};

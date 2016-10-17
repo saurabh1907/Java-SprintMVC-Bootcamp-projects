@@ -1,0 +1,6 @@
+INDEX VERSION 1.121+D:\Geometric\AdvJavaWorkspace\.metadata\.plugins\org.eclipse.wst.jsdt.core
+4257346626.index
+1580943963.index
+301285247.index
+3417109650.index
+4235099092.index

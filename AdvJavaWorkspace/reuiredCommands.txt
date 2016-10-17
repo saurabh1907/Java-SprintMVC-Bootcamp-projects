@@ -1,0 +1,3 @@
+java -Djava.security.policy=server.policy -Djava.rmi.server.codebase=http://localhost:8080/BootstrapServerApp/computeSpecs.jar -Djava.rmi.server.hostname=localhost engine.Server localhost
+
+java -Djava.security.policy=client.policy -Djava.rmi.server.codebase=http://localhost:8080/BootstrapClientApp/ client.ComputePi localhost 200

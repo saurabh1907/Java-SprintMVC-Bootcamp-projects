@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;BootstrapClientApp/WebContent/computeSpec.jar&apos; to &apos;computeSpecs.jar&apos;" description="Rename resource &apos;computeSpec.jar&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/computeSpec.jar" name="computeSpecs.jar" stamp="1343386285859" updateReferences="true"/>
+</session>

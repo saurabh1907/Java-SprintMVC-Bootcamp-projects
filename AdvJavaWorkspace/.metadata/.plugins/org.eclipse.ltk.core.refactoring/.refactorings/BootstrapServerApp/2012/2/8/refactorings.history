@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 1 elements(s) to &apos;BootstrapClientApp&apos;&#x0D;&#x0A;- Original project: &apos;BootstrapServerApp&apos;&#x0D;&#x0A;- Destination element: &apos;BootstrapClientApp&apos;&#x0D;&#x0A;- Original element: &apos;docs&apos;" description="Copy folder" destination="=BootstrapClientApp" element1="docs" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1329818519356" units="0" version="1.0"/>
+</session>

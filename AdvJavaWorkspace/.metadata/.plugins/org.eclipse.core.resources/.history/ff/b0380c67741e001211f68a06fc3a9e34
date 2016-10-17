@@ -1,0 +1,17 @@
+package engine;
+
+import compute.Compute;
+import compute.Task;
+
+public class ComputeEngine implements Compute {
+ 
+    public ComputeEngine() {
+        super();
+    }
+ 
+//	implementation of remote method     
+    public <T> T executeTask(Task<T> t) {
+        return t.execute();
+    }
+   
+}
