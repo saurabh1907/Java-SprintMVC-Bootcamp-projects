@@ -2,6 +2,7 @@ package com.flp.ems.controller;
 
 import java.io.IOException;
 import java.sql.Date;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import javax.servlet.RequestDispatcher;
@@ -60,7 +61,6 @@ public class ControllerServlet extends HttpServlet {
 			employeeData.put("deptID", deptID);
 			employeeData.put("projectID", projectID);
 			employeeData.put("rolesID", rolesID);
-
 			employeeService.addEmployee(employeeData);
 			response.sendRedirect("index.jsp");
 		}
@@ -97,24 +97,16 @@ public class ControllerServlet extends HttpServlet {
 			response.sendRedirect("index.jsp");
 		}
 		if (action.equals(SEARCH_EMPLOYEE_ACTION)) {
-			HashMap<String, Object> empData = employeeService.searchEmployee(request.getParameter("nameOrID"));
-			request.setAttribute("empData", empData);
+			ArrayList<HashMap<String, Object>> empList = employeeService.searchEmployee(request.getParameter("nameOrID"));
+			request.setAttribute("empList", empList);
 			RequestDispatcher rd = request.getRequestDispatcher("displayEmployee.jsp");
 			rd.forward(request, response);
-			System.out.println(empData.get("name") + " " + empData.get("kinID") + " " + empData.get("phoneNo") + " "
-					+ empData.get("dob"));
-
 		}
 		if (action.equals(SHOW_ALL_ACTION)) {
-			System.out.println("\nNAME\tKINID\tPHONENO\t\tDOB\n------------------------------------------------------");
-			for (HashMap<String, Object> empData : employeeService.getAllEmployee()) {
-				System.out.println(empData.get("name") + " " + empData.get("kinID") + " " + empData.get("phoneNo") + " "
-						+ empData.get("dob"));
-			}
-			response.sendRedirect("index.jsp");
-			//hello
+			ArrayList<HashMap<String, Object>> empList = employeeService.getAllEmployee();
+			request.setAttribute("empList", empList);
+			RequestDispatcher rd = request.getRequestDispatcher("displayEmployee.jsp");
+			rd.forward(request, response);
 		}
-
 	}
-
 }

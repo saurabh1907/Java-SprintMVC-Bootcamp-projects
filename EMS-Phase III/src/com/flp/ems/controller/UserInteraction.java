@@ -79,7 +79,6 @@ public class UserInteraction {
 		employeeData.put("deptID", deptID);
 		employeeData.put("projectID", projectID);
 		employeeData.put("rolesID", rolesID);
-		//hello
 		employeeService.modifyEmployee(employeeData);
 	}
 

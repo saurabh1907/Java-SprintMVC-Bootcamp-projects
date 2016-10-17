@@ -9,15 +9,15 @@
 <body>
 <form action="ControllerServlet" method="post" >
 <input type="hidden" name= "formType" value = "addEmployee">
-Name <input type="text" name="name"/><br>
-Kin ID <input type="text" name="kinID"/><br>
-Phone No <input type="text" name="phoneNo" /><br>
-Date of Birth <input type="text" name="dateOfBirth" /><br>
-Date of Joining <input type="text" name="dateOfJoining" /><br>
+Name <input type="text" name="name" value="saurabh"/><br>
+Kin ID <input type="text" name="kinID" value="saurabh"/><br>
+Phone No <input type="text" name="phoneNo" value="1234567890"/><br>
+Date of Birth <input type="text" name="dob" value="11/11/1111"/><br>
+Date of Joining <input type="text" name="doj" value="11/11/1111"/><br>
 Address <input type="text" name="address" value="Address"/><br>
-Department ID <input type="text" name="departmentID" /><br>
-Project ID <input type="text" name="projectID" /><br>
-Roles ID <input type="text" name="rolesID" /><br>
+Department ID <input type="text" name="deptID" value="10"/><br>
+Project ID <input type="text" name="projectID" value="20"/><br>
+Roles ID <input type="text" name="rolesID" value="20"/><br>
 <input type="submit" name="addEmployee" value="Submit" /><br><br>
 <a href="index.jsp">Home</a>
 </form>

@@ -20,7 +20,6 @@ public class EmployeeServiceImpl implements IEmployeeService {
 			long phoneNo = Long.parseLong(employeeData.get("phoneNo"));
 			Date dob = DateParser.dateParser(employeeData.get("dob"));
 			Date doj = DateParser.dateParser(employeeData.get("doj"));
-
 			String address = employeeData.get("address");
 			int deptID = Integer.parseInt(employeeData.get("deptID"));
 			int projectID = Integer.parseInt(employeeData.get("projectID"));
@@ -61,11 +60,13 @@ public class EmployeeServiceImpl implements IEmployeeService {
 	}
 
 	@Override
-	public HashMap<String,Object> searchEmployee(String nameOrId) {
+	public ArrayList<HashMap<String,Object>> searchEmployee(String nameOrId) {
+		ArrayList<HashMap<String, Object>> employeeList = new ArrayList<>();
 		HashMap<String,Object> tempEmpData;
 		Employee currentEmployee= dao.searchEmployee(nameOrId);
 		
 		tempEmpData= new HashMap<>();
+		tempEmpData.put("id", currentEmployee.getId());
 		tempEmpData.put("name", currentEmployee.getName());
 		tempEmpData.put("kinID", currentEmployee.getKinID());
 		tempEmpData.put("phoneNo", currentEmployee.getPhoneNo());
@@ -75,8 +76,8 @@ public class EmployeeServiceImpl implements IEmployeeService {
 		tempEmpData.put("deptID", currentEmployee.getDepartmentID());
 		tempEmpData.put("projectID", currentEmployee.getPhoneNo());
 		tempEmpData.put("rolesID", currentEmployee.getRolesID());
-		//hello
-		return tempEmpData;
+		employeeList.add(tempEmpData);
+		return employeeList;
 	}
 
 	@Override
@@ -85,6 +86,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
 		HashMap<String,Object> tempEmpData;
 		for(Employee currentEmployee: dao.getAllEmployee()){
 			tempEmpData= new HashMap<>();
+			tempEmpData.put("id", currentEmployee.getId());
 			tempEmpData.put("name", currentEmployee.getName());
 			tempEmpData.put("kinID", currentEmployee.getKinID());
 			tempEmpData.put("phoneNo", currentEmployee.getPhoneNo());

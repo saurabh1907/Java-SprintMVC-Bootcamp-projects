@@ -10,7 +10,7 @@ public Project(){
 	
 }
 public int getProjectID() {
-	return projectID;//hello
+	return projectID;
 }
 public void setProjectID(int projectID) {
 	this.projectID = projectID;

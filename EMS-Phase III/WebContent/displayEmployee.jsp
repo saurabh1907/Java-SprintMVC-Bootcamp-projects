@@ -9,15 +9,27 @@
 <title>Insert title here</title>
 </head>
 <body>
-<c:forEach items="${empData}" var='employee'>
-${ } : ${employee.value}
-${employee['name']}
-
+<table>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>KinID</th>
+<th>Phone No</th>
+<th>Date of Birth</th>
+<th>Date of Joining</th>
+</tr>
+<c:forEach items='${empList}' var='empData' >
+<tr>
+<td>${empData['id']}</td>
+<td>${empData['name']}</td>
+<td>${empData['kinID']}</td>
+<td>${empData['phoneNo']}</td>
+<td>${empData['dob']}</td>
+<td>${empData['doj']}</td>
+</tr>
 </c:forEach>
+</table>
 
-
-
-
-<jsp:forward page="index.jsp"></jsp:forward>
+<a href="index.jsp">Home</a>
 </body>
 </html>
