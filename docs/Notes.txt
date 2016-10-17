@@ -87,4 +87,12 @@ web-inf hidden from clients
 wtpwebapps deployment folder inside workspace(actually consumed by tomcat)
 jsp expression language
 
-context loader listener creates IOC container replresented by web application context
+context loader listener creates IOC container represented by web application context
+static and transient cannot be serialized
+
+https://docs.oracle.com/javase/tutorial/essential/io/objectstreams.html
+study volatile
+rmi trail
+
+SOAP creates envelope of messages
+WSDL provide service definition
