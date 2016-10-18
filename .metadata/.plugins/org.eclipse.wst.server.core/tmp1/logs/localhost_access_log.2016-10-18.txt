@@ -433,3 +433,10 @@
 127.0.0.1 - - [18/Oct/2016:17:30:08 +0530] "GET / HTTP/1.1" 404 994
 127.0.0.1 - - [18/Oct/2016:17:30:08 +0530] "GET / HTTP/1.1" 404 -
 0:0:0:0:0:0:0:1 - - [18/Oct/2016:17:31:12 +0530] "POST /jersey-demo/webapi/myresource/addDetails HTTP/1.1" 500 5423
+127.0.0.1 - - [18/Oct/2016:17:44:47 +0530] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [18/Oct/2016:17:44:47 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [18/Oct/2016:17:45:28 +0530] "GET /jersey-demo/webapi/myresource/getSpecific/45 HTTP/1.1" 404 1010
+0:0:0:0:0:0:0:1 - - [18/Oct/2016:17:45:40 +0530] "GET /jersey-demo/webapi/myresource/getSpecific/45 HTTP/1.1" 404 1010
+0:0:0:0:0:0:0:1 - - [18/Oct/2016:17:45:42 +0530] "GET /jersey-demo/webapi/myresource/getSpecific/45 HTTP/1.1" 404 1010
+127.0.0.1 - - [18/Oct/2016:17:46:06 +0530] "GET / HTTP/1.1" 404 994
+127.0.0.1 - - [18/Oct/2016:17:46:06 +0530] "GET / HTTP/1.1" 404 -
