@@ -1,0 +1,23 @@
+demo file: 
+------------
+sfa/sfa6.html
+
+required resources: 
+-----------------------
+
+scene0.png - Scene 0 image that appears on the Stick Figure Adventure web page
+scene1.png - Scene 1 image that appears on the Stick Figure Adventure web page
+scene2.png - Scene 2 image that appears on the Stick Figure Adventure web page
+scene3.png - Scene 3 image that appears on the Stick Figure Adventure web page
+scene4.png - Scene 4 image that appears on the Stick Figure Adventure web page
+scene5.png - Scene 5 image that appears on the Stick Figure Adventure web page
+scene6.png - Scene 6 image that appears on the Stick Figure Adventure web page
+scene7.png - Scene 7 image that appears on the Stick Figure Adventure web page
+scene8.png - Scene 8 image that appears on the Stick Figure Adventure web page
+scene9.png - Scene 9 image that appears on the Stick Figure Adventure web page
+
+
+what it does:
+---------------
+
+It shows use of DOM to change message content. (observe line no 79)

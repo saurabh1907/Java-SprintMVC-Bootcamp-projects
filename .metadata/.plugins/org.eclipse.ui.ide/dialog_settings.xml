@@ -12,6 +12,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\dev\demo\AdvJavaWorkspace"/>
 			<item value="D:\dev\demo\VIM-Spring-JDBC-Template"/>
 			<item value="D:\dev\demo\Demo@FormHandlingSpring"/>
 			<item value="D:\dev\demo\Demo-Spring-MVC"/>

@@ -1,0 +1,12 @@
+demo file: 
+------------
+irock/irock6.html
+
+required resources: 
+-----------------------
+images/rock_happy.png; images/rock.png
+
+what it does:
+---------------
+
+It shows use of document and style object to resize the rock in response to the onresize window event. 

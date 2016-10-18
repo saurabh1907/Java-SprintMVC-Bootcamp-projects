@@ -1,0 +1,15 @@
+demo file: 
+------------
+mandango/mandango8.html
+
+required resources: 
+-----------------------
+
+seat_select.png - Selected movie seat image that appears on the Mandango web page
+seat_avail.png - Available movie seat image that appears on the Mandango web page
+seat_unavail.png - Unavailable movie seat image that appears on the Mandango web page
+
+what it does:
+---------------
+
+mandango/mandango6.html in project HFJ-6 is reworked using functions reference event handlers.

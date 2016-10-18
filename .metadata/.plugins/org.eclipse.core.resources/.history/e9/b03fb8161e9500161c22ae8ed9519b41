@@ -1,0 +1,5 @@
+package com.jersey.example;
+
+public class Person {
+
+}

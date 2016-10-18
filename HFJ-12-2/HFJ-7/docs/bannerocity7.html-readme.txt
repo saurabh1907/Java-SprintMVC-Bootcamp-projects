@@ -1,0 +1,14 @@
+demo file: 
+------------
+bannerocity/bannerocity7.html
+
+required resources: 
+-----------------------
+bannerocity.css
+images/logo.png
+
+what it does:
+---------------
+
+Bannerocity web page reworked to use regular expressions to validate phone.(observe line no 56) 
+it uses CharacterClass of regular expression(observe line no 67)

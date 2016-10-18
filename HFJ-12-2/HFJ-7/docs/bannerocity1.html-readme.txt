@@ -1,0 +1,14 @@
+demo file: 
+------------
+bannerocity/bannerocity1.html
+
+required resources: 
+-----------------------
+bannerocity.css
+images/logo.png
+
+what it does:
+---------------
+
+it shows function for data validation. (observe line no 9)
+use of onblur event (observe line no 30)

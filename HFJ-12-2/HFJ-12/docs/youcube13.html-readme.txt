@@ -1,0 +1,23 @@
+demo file: 
+------------
+youcube/youcube13.html
+
+required resources: 
+-----------------------
+ajax.js   
+date.js  
+
+cube.png - Cube image that appears on the YouCube web page
+cube777.png - Seven-sided cube image used in a YouCube blog entry
+cubeapart.png - Disassembled cube image used in a YouCube blog entry
+
+blog.xml - XML file containing YouCube blog entries
+
+what it does:
+---------------
+
+demo youcube12.html is reworked with support for reading and writing blog entries from/to an XML file using Ajax
+(observe line no 62, 68, 71) 
+
+Also, refer ajax.js; external JavaScript code to help in carrying out Ajax requests
+Also, refer date.js; external JavaScript code to help in formatting dates

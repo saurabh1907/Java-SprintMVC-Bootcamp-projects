@@ -1,0 +1,12 @@
+demo file: 
+------------
+irock/irock4.html
+
+required resources: 
+-----------------------
+images/rock_happy.png; images/rock.png
+
+what it does:
+---------------
+
+It shows use of one shot timer.  

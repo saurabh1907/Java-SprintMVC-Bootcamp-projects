@@ -1,0 +1,13 @@
+demo file: 
+------------
+irock/irock5.html
+
+required resources: 
+-----------------------
+images/rock_happy.png; images/rock.png
+
+what it does:
+---------------
+
+It shows use of document and style object 
+to resize the rock image to the client window when the page first loads 

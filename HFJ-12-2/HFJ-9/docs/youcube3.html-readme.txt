@@ -1,0 +1,16 @@
+demo file: 
+------------
+youcube/youcube3.html
+
+required resources: 
+-----------------------
+
+cube.png - Cube image that appears on the YouCube web page
+
+what it does:
+---------------
+
+It shows custom object with properties only. 
+Methods are still not added to the object.
+Custom Object contains built-in Date object.
+Methods of Date object are used to format the date of a blog.

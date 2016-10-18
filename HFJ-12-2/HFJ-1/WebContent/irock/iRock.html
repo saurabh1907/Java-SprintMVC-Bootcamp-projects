@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>iRock - THE VIRTUAL PET ROCK</title>
+
+<!-- This is our first JAVAScript code -->
+
+<script type="text/javascript">
+
+/*
+ * this is a user defined JAVAScript function 
+ */
+
+	function touchRock() {
+/*
+ * prompt() is a built-in JAVAScript function to get a value from user with pop up box
+ */
+		var userName = prompt("what is your name?","Enter your name here.");
+		
+		if(userName){
+/*
+ * alert() is another built-in function that displays an alert box
+ */
+			alert("It is good to meet you, "+ userName + ".");
+/*
+ * document is built-in object which has number of methods and properties 
+ */
+			document.getElementById("rocking").src = "../images/rock_happy.png";
+		}
+	}
+</script>
+
+<!-- end of JAVAScript code -->
+
+</head>
+
+<!-- onLoad is an event attribute of body tag -->
+<body onload="alert('Hello, I'm your pet rock');">
+
+	<div style="margin-top: 100px; text-align: center">
+	
+	<!-- onClick is another event attribute -->
+		<img id="rocking" alt="cannot display image" src="../images/rock.png" onclick="touchRock()"
+			style="cursor: pointer;">
+	</div>
+</body>
+</html>

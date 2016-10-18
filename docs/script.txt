@@ -1,0 +1,25 @@
+set JAVA_HOME=...\jdk1.8
+
+
+
+set path=%JAVA_HOME%\bin
+
+mvn archetype:generate -Dfilter=org.apache.cxf.archetype:
+
+
+set M2_HOME=d:\...apache-maven-3.3.9
+
+set path=%path%;%M2_HOME%\bin;
+
+set path
+
+
+cd dev
+
+md projects
+
+cd projects
+
+
+
+D:\dev\projects\mvn archetype:generate -DarchetypeGroupId=org.glassfish.jersey.archetypes -DarchetypeArtifactId=jersey-quickstart-webapp -DarchetypeVersion=2.23.2

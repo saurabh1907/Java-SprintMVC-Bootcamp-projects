@@ -1,0 +1,13 @@
+demo file: 
+------------
+bannerocity/bannerocity6.html
+
+required resources: 
+-----------------------
+bannerocity.css
+images/logo.png
+
+what it does:
+---------------
+
+Bannerocity web page reworked to use regular expressions to validate date. (observe line no 52)

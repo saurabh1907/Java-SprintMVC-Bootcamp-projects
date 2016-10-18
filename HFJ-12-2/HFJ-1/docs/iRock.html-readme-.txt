@@ -1,0 +1,15 @@
+demo file: 
+------------
+irock/iRock.html
+
+required resources: 
+-----------------------
+images/rock_happy.png; images/rock.png
+
+what it does:
+---------------
+
+This demo shows how to write a function in JAVAScript.
+It also shows use of built-in function prompt(), alert().
+It shows how to access properties of built-in JAVAScript object document.
+It also shows how to use JAVAScript event onLoad, onClick

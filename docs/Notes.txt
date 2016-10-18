@@ -96,3 +96,11 @@ rmi trail
 
 SOAP creates envelope of messages
 WSDL provide service definition
+set M2_HOME=D:\dev\tools\apache-maven-3.3.9
+set path=%path%;%M2_HOME%\bin
+mvn archetype:generate -Dfilter=org.apache.cxf.archetype:
+
+xsd:XML as class:object
+wsdl tells operation,parameters, signature
+
+mvn archetype:generate -DarchetypeGroupId=org.glassfish.jersey.archetypes -DarchetypeArtifactId=jersey-quickstart-webapp -DarchetypeVersion=2.23.2

@@ -1,0 +1,20 @@
+demo file: 
+------------
+youcube/youcube6.html
+
+required resources: 
+-----------------------
+
+cube.png - Cube image that appears on the YouCube web page
+
+what it does:
+---------------
+
+It shows custom object with properties only. 
+Custom Object contains built-in Date object.
+Methods of Date object are used to format the date of a blog.
+It shows use of function literal to change behavior of sort on array.
+new function searchBlog() is added which uses methods of built-in String object.
+new function randomBlog() is added which uses methods of built-in Math object.
+
+Custom functions moved into Blog object methods (methods are owned by instance). 

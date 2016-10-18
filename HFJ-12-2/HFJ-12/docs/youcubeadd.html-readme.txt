@@ -1,0 +1,17 @@
+demo file: 
+------------
+youcube/youcubeadd.html
+
+required resources: 
+-----------------------
+
+addblogentry.php - PHP server script that processes blog entry additions for the YouCube blog entry addition web page
+ 
+ajax.js - External JavaScript code to help in carrying out Ajax requests 
+date.js - External JavaScript code to help in formatting dates 
+
+what it does:
+---------------
+
+YouCube blog entry addition web page used to add blog entries through a web interface
+(Observe line no 22,30) 

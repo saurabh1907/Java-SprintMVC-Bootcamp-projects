@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>Duncan's Just-In-Time Donuts</title>
+
+    <link rel="stylesheet" type="text/css" href="../resources/donuts.css" />
+
+    <script type="text/javascript">
+	/*
+	 *	This function calculates total billed amount for the order
+	 */    
+      function updateOrder() {
+		//	now, these constants are not initialized
+        const TAXRATE = 0.0925;
+        const DONUTPRICE = 0.50;
+        
+        // parseInt() is built-in functon to parse text into number
+        
+        var numCakeDonuts = parseInt(document.getElementById("cakedonuts").value);
+        var numGlazedDonuts = parseInt(document.getElementById("glazeddonuts").value);
+        
+        // isNaN() is another built-in function to check whether variable contains number or not
+        if (isNaN(numCakeDonuts))
+          numCakeDonuts = 0;
+        
+        if (isNaN(numGlazedDonuts))
+          numGlazedDonuts = 0;
+        
+     	// now, contents inside numCakeDonuts and numGlazedDonuts variables is number, 
+	    // so it'll not be concatenated, it is now added
+	    
+        var subTotal = (numCakeDonuts + numGlazedDonuts) * DONUTPRICE;
+        var tax = subTotal * TAXRATE;
+        var total = subTotal + tax;
+        document.getElementById("subtotal").value = "$" + subTotal.toFixed(2);
+        document.getElementById("tax").value = "$" + tax.toFixed(2);
+        document.getElementById("total").value = "$" + total.toFixed(2);
+      }
+
+    	/*
+    	 *	This function submits the order to the server
+    	 */	
+      function placeOrder(form) {
+        form.submit();
+      }
+    </script>
+  </head>
+
+<body>
+	<div id="frame">
+		<div class="heading">Duncan's Just-In-Time Donuts</div>
+		<div class="subheading">All donuts 50 cents each, cake or
+			glazed!</div>
+		<div id="left">
+			<img src="../images/donuttime.png" alt="Just-In-Time Donuts" />
+		</div>
+		<form name="orderform" action="donuts.php" method="POST">
+			<div class="field">
+				Name: <input type="text" id="name" name="name" value="" />
+			</div>
+			
+			<!-- when onchange event occurs, updateOrder() will be called-->
+			<div class="field">
+				# of cake donuts: <input type="text" id="cakedonuts" name="cakedonuts" value="" onchange="updateOrder();" />
+			</div>
+			
+			<div class="field">
+				# of glazed donuts: <input type="text" id="glazeddonuts" 	name="glazeddonuts" value="" onchange="updateOrder();" />
+			</div>
+			
+			<div class="field">
+				Minutes 'til pickup: <input type="text" id="pickupminutes" 	name="pickupminutes" value="" />
+			</div>
+			
+			<div class="field">
+				Subtotal: <input type="text" id="subtotal" name="subtotal" value="" 	readonly="readonly" />
+			</div>
+			
+			<div class="field">
+				Tax: <input type="text" id="tax" name="tax" value=""	readonly="readonly" />
+			</div>
+			
+			<div class="field">
+				Total: <input type="text" id="total" name="total" value="" readonly="readonly" />
+			</div>
+			
+			<!-- when user clicks on this button, placeOrder() will be called-->
+			<div class="field">
+				<input type="button" value="Place Order" onclick="placeOrder(this.form);" />
+			</div>
+		</form>
+	</div>
+</body>
+</html>

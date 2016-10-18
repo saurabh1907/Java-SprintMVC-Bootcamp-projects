@@ -1,0 +1,16 @@
+demo file: 
+------------
+donuts/donuts5.html
+
+required resources: 
+-----------------------
+images/donuttime.png
+donuts.css - External CSS style sheet for the Donuts web page
+donuts.php - PHP server script that processes donut orders for the Donuts web page
+
+what it does:
+---------------
+
+It also shows use of data validations.
+And And it shows use of indexOf on String to calculate amount based on donuts in dozen.  
+

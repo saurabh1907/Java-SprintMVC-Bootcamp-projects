@@ -1,0 +1,13 @@
+demo file: 
+------------
+bannerocity/bannerocity3.html
+
+required resources: 
+-----------------------
+bannerocity.css
+images/logo.png
+
+what it does:
+---------------
+
+it adds new function for validate numeric data of spcified size. (observe line no 41)

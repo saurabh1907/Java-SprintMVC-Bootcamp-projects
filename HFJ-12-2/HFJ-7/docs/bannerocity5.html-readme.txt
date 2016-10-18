@@ -1,0 +1,13 @@
+demo file: 
+------------
+bannerocity/bannerocity5.html
+
+required resources: 
+-----------------------
+bannerocity.css
+images/logo.png
+
+what it does:
+---------------
+
+Bannerocity web page reworked to use regular expressions. (observe line no 9 to 47)

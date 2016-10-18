@@ -1,0 +1,13 @@
+demo file: 
+------------
+youcube/youcube1.html
+
+required resources: 
+-----------------------
+
+cube.png - Cube image that appears on the YouCube web page
+
+what it does:
+---------------
+
+it shows custom object with properties only. Methods are not added to the object.

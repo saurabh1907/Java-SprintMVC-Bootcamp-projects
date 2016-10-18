@@ -1,0 +1,15 @@
+demo file: 
+------------
+youcube/youcube10.html
+
+required resources: 
+-----------------------
+
+cube.png - Cube image that appears on the YouCube web page
+cube777.png - Seven-sided cube image used in a YouCube blog entry
+
+
+what it does:
+---------------
+
+YouCube web page with the custom shortFormat() method added to the standard Date object 

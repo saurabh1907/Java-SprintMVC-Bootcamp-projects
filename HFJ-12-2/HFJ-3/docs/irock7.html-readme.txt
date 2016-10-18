@@ -1,0 +1,12 @@
+demo file: 
+------------
+irock/irock7.html
+
+required resources: 
+-----------------------
+images/rock_happy.png; images/rock.png
+cookie.js External JavaScript code to help in processing cookies
+
+what it does:
+---------------
+It shows use of cookies. 

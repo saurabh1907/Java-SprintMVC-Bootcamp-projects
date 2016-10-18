@@ -1,0 +1,19 @@
+demo file: 
+------------
+mandango/mandango2.html
+
+required resources: 
+-----------------------
+
+images/seat_select.png - Selected movie seat image that appears on the Mandango web page
+images/seat_avail.png - Available movie seat image that appears on the Mandango web page
+images/seat_unavail.png - Unavailable movie seat image that appears on the Mandango web page
+
+
+what it does:
+---------------
+
+it shows use of 1-d array
+in demo-mandango2.html, even after selecting seat, code asks you to select seat again
+it uses for loop with break so that seat can be selected once.
+it also uses built-in function confirm(). 

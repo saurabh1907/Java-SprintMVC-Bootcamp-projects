@@ -1,0 +1,14 @@
+demo file: 
+------------
+bannerocity/bannerocity2.html
+
+required resources: 
+-----------------------
+bannerocity.css
+images/logo.png
+
+what it does:
+---------------
+
+it adds new function for validate length of data. (observe line no 25)
+alert boxes are replaced by elegant <span> to display error messages(observe line no 12,18).

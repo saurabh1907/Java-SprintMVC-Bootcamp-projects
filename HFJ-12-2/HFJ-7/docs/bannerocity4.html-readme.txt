@@ -1,0 +1,13 @@
+demo file: 
+------------
+bannerocity/bannerocity4.html
+
+required resources: 
+-----------------------
+bannerocity.css
+images/logo.png
+
+what it does:
+---------------
+
+it adds new function for validating fields before submitting the form. (observe line no 64,123)

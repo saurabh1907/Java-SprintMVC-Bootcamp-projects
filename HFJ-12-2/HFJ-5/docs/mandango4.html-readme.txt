@@ -1,0 +1,19 @@
+demo file: 
+------------
+mandango/mandango4.html
+
+required resources: 
+-----------------------
+
+images/seat_select.png - Selected movie seat image that appears on the Mandango web page
+images/seat_avail.png - Available movie seat image that appears on the Mandango web page
+images/seat_unavail.png - Unavailable movie seat image that appears on the Mandango web page
+
+
+what it does:
+---------------
+
+it shows use of 1-d array
+it implements three-seats search.
+it shows use of while loop.
+it also uses built-in function confirm(). 

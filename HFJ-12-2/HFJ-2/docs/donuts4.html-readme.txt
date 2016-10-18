@@ -1,0 +1,14 @@
+demo file: 
+------------
+donuts/donuts4.html
+
+required resources: 
+-----------------------
+images/donuttime.png
+donuts.css - External CSS style sheet for the Donuts web page
+donuts.php - PHP server script that processes donut orders for the Donuts web page
+
+what it does:
+---------------
+
+It shows use of data validations.  
